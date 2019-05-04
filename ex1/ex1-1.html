@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>연습문제 1-1</title>
+  </head>
+  <body>
+    <h2>연습문제 1-1</h2>
+    <script>
+      // 숫자를 입력받아 값을 숫자형으로 바꾼 후, 사칙연산결과를 화면에 표시하기 - 2019년 5월1일
+      var a, b;
+      a = prompt("숫자 세 자리를 입력해주세요.");
+      b = prompt("다른 숫자 세 자리를 입력해주세요.");
+      var a2, b2;
+      a2 = Number(a);
+      b2 = Number(b);
+      var c, c2, c3, c4;
+      c = a2 + " + " + b2 + " = " + (a2 + b2);
+      c2 = a2 + " - " + b2 + " = " + (a2 - b2);
+      c3 = a2 + " * " + b2 + " = " + (a2 * b2);
+      c4 = a2 + " / " + b2 + " = " + (a2 / b2);
+      document.write(c + '<br />');
+      document.write(c2 + '<br />');
+      document.write(c3 + '<br />');
+      document.write(c4 + '<br />');
+
+      // TIL - 변수값 출력 후 + '<br/>'로 줄바꿈하기 //
+
+    </script>
+  </body>
+</html>
