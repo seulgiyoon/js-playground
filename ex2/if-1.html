@@ -8,13 +8,11 @@
     <h2>if문 연습문제 1</h2>
     <script>
       // 입력받은 숫자가 홀수인지 짝수인지를 알려주는 프로그램 - 2019년 5월 4일
-      var str, n;
-      str = prompt("숫자를 입력해주세요.");
-      n = Number(str);
-      if (n % 2 === 0) {
-        document.write(n + ", 짝수입니다.");
+      const n = Number(prompt("숫자를 입력해주세요."));
+      if (n % 2 == 0) {
+        document.write(`${n}, 짝수입니다.`);
       } else {
-        document.write(n + ", 홀수입니다");
+        document.write(`${n}, 홀수입니다.`);
       }
     </script>
 
