@@ -8,16 +8,11 @@
     <h2>연습문제 1-2</h2>
     <script>
       // BMI 값을 계산하고 결과를 화면에 표시하기 - 2019년 5월1일
-      var a, b;
-      a = prompt("키를 입력하세요(cm)");
-      b = prompt("몸무게를 입력하세요(kg)");
-      var a2, a3, b2;
-      a2 = Number(a);
-      a3 = a2 / 100;
-      b2 = Number(b);
-      var c;
-      c = b2 / (a3 * a3);
-      document.write("당신의 BMI지수 : " + c.toFixed(1));
+      let cm = Number(prompt("키를 입력하세요(cm)"));
+      let kg = Number(prompt("몸무게를 입력하세요(kg)"));
+      let m = cm / 100;
+      let bmi = kg / (m * m);
+      document.write(`당신의 BMI지수 : ${bmi.toFixed(1)}`);
 
       // TIL - 변수.toFixed(소수점 아래 표시 될 자릿수) //
 
