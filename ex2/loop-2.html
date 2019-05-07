@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>loop 연습 2</title>
+</head>
+<body>
+    <h2>loop 연습 2</h2>
+    <script>
+        /* 1에서 100까지 짝수의 합을 구해 봅시다. */
+
+        /* 
+        1. 내가 처음 작성한 코드
+
+        let n = 1;
+        let sum = 0;
+        while (n <= 100) {
+            if (n % 2 == 0) {
+                sum += n;
+                n++;
+            } else {
+                n++;
+            }
+        }
+        document.write(sum);
+        */
+
+        /*
+        2. 답 코드를 확인. for, if문을 사용한 것을 보고 코드 다시 작성.
+        if문을 사용할 땐 else를 무조건 같이 사용해야 한다고 착각하고 있었다.
+        */
+
+        let sum = 0;
+        for (let n = 1; n <= 100; n++) {
+            if (n % 2 == 0) {
+                sum += n;
+                console.log(n, sum);
+            }
+        }
+        document.write(sum);
+
+        /* 
+        for문으로 계속 돌아가게 두고, 중간중간 필요한 요소만 if문으로 빼가는 형태.
+        console.log는 왜 항상 집어넣는걸까 궁금했는데, 오늘 코드를 테스트해보면서
+        결과는 맞게 나왔지만 코드가 제대로 돌아가고 있는지 확인하고 싶었고, 필요성을 깨달았다.
+        */
+
+    </script>
+</body>
+</html>
