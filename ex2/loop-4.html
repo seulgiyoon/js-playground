@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>loop 연습 4</title>
+</head>
+<body>
+    <h2>loop 연습 4</h2>
+    <script>
+    /* 입력받은 숫자가 소수인지 판별하는 프로그램 */
+    
+    /* 1. 처음에 작성한 코드
+
+    let n = Number(prompt("2 이상의 정수를 입력해주세요."));
+    for (let i = 2; i <= n; i++) {
+        if (n % i === 0) {
+            if (n === i) {
+                document.write(`${n}은 소수입니다.`);
+            } else {
+                document.write(`${n}은 소수가 아닙니다. ${i}로 나눠지기 때문입니다.`);
+                break;
+            }
+        }
+    }
+    */
+
+    /* i <= n으로 지정한 코드. i < n로 수정.
+
+    let n = Number(prompt("2 이상의 정수를 입력해주세요."));
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            document.write(`${n}은 소수가 아닙니다. ${i}로 나눠지기 때문입니다.`);
+            break;
+        } else {
+            document.write(`${n}은 소수입니다.`);
+            break;
+        }
+    }
+    */
+
+    /* 3. 예시답안 -> 변수를 true로 가정하고 짜는 방법. */
+
+    var isPrime = true;
+    var n = Number(prompt("2 이상의 정수를 입력해주세요."));
+    for (var i = 2; i < n; i++) {
+        if (n % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        document.write(n + "은 소수입니다.");
+    } else {
+        document.write(n + "은 소수가 아닙니다. " + i +"로 나눠지기 때문입니다.");
+    }
+
+    </script>
+    
+</body>
+</html>
