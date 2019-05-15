@@ -32,12 +32,12 @@
     <script>
         var numbers = {};
         numbers.all = [];
-        numbers.Prime = [];
-        numbers.addAll = function() {
-            for (var i = 0; i < 10000; i++) {
+        numbers.Prime = []; 
+        numbers.addAll = function(max_num) {
+            for (var i = 0; i < max_num; i++) {
                 this.all[i] = i + 1;
             }
-        }
+        };
         numbers.addPrime = function() {
             var k = 0;
             for(var n = 2; n < this.all.length; n++) {
@@ -54,15 +54,18 @@
                     k++;
                 }
             }
-        }
+        };
+        // 다시 보니 numbers.addPrime이 두 가지 기능을 하고 있어서
+        // 그 기능 그대로 분리하려고 했으나.. 실패했다. 
+
         numbers.getAllPrimes = function() {
             for(var m = 0; m < this.Prime.length - 1; m++) {
                 document.write(this.Prime[m] + " · ");
             }
             document.write(this.Prime[this.Prime.length - 1]);
-        }
+        };
 
-        numbers.addAll();
+        numbers.addAll(10000);
         numbers.addPrime();
         numbers.getAllPrimes();
     </script> 
