@@ -35,30 +35,29 @@
 <body>
     <h1>구구단 출력 :<br>함수를 이용하기</h1>
     <script>
-
-    var addNumbers = function(num) {
+    function gugudan(num) {
         var results = [];
         for (var i = 1; i <= 9; i++) {
             var j = num + " x " + i + " = " + num * i + "<br>";
             results.push(j);
         }
         return results;
-    };
+    }
 
-    var printNumbers = function(results) {
+    function printGugudan(results) {
         for (var n = 0; n < results.length; n++) {
             document.write(results[n]);
         }
-    };
+    }
 
-    var main = function() {
+    function main() {
         for (var n = 2; n <= 9; n++){
             document.write("<div>");
             document.write("<h2>" + n + "단</h2>");
-            printNumbers(addNumbers(n));
+            printGugudan(gugudan(n));
             document.write("</div>");
         }
-    };  
+    }
 
     main();
 </script>
