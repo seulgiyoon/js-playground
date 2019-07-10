@@ -1,0 +1,41 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.description {
+    width: 90%;
+}
+
+.description p {
+    line-height: 1.6em;
+}
+
+.requestNumbers {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#numbers {
+    width: 120px;
+    height: 20px;
+    padding: 2px 5px;
+    margin: 0 5px;
+    font-size: 15px;
+}
+
+.box {
+    float : left;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    line-height: 1.6em;
+}
+
+h2 {
+    margin-top : 10px;
+    margin-bottom : 12px;
+    padding-bottom : 10px;
+    border-bottom : 3px double grey;
+}

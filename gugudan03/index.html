@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link herf="gugudan.css" rel="stylesheet">
+    <title>곱셈식 출력 - 숫자를 입력받아 출력하기</title>
+</head>
+<body>
+    <header>
+        <h1>곱셈식 출력 :<br>숫자를 입력받아 출력하기</h1>
+    </header>
+    <main>
+        <div class="description">
+            <p>아래 입력란에 곱셈 결과를 확인하고 싶은 숫자 세트를 입력하세요.<br>곱해지는 숫자는 2에서 시작하여 입력한 숫자 A까지, 곱하는 숫자는 1에서 시작하여 입력한 숫자 B까지를 범위로 삼아 수식을 출력합니다.</p>
+            <p>예) '8,7'을 입력한 경우<br>2단 | 2×1=2… 2×7=14, 3단 | 3×1=3… 3×7=21, … , 8단 | 8×1=8… 8×7=56 까지 출력</p>
+            <p>첫 번째 숫자 A는 2부터, 두 번째 숫자는 1부터 입력해주세요.</p>
+            <div class="requestNumbers">
+                <label for="numbers">숫자 입력 : </label>
+                <input type="text" id="numbers" placeholder="A,B" autofocus>
+                <button id="btn" onclick="main()">확인</button>
+            </div>
+        </div>
+        <div class="showNumbers" id="showNumbers">
+            <div class="box"></div>
+        </div>
+    </main>
+    <footer>마스터즈 코스 1 구구단 구현하기 결과물</footer>
+    <script type="text/javascript" src="gugudan.js"></script>
+</body>
+</html>
